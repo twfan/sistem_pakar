@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sistem Pakar</string>
+    <string name="planets_array">planets_array</string>
+    <string-array name="jenis_usaha">
+        <item>TDP</item>
+        <item>SIUP</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="e.twfan.sistempakar.ChooseActivity">
+
+    <Button
+        android:id="@+id/btn_siup"
+        android:layout_width="@dimen/width_button_choose"
+        android:layout_height="@dimen/height_button_choose"
+        android:text="SIUP"
+        android:textSize="@dimen/text_size_choose"
+        android:layout_marginRight="@dimen/margin_right_choose"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn_tdp"
+        android:layout_width="@dimen/width_button_choose"
+        android:layout_height="@dimen/height_button_choose"
+        android:text="TDP"
+        android:textSize="@dimen/text_size_choose"
+        android:layout_centerInParent="true"
+        />
+
+
+</LinearLayout>
