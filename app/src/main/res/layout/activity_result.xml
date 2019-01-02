@@ -4,19 +4,22 @@
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="e.twfan.sistempakar.ResultActivity">
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical">
 
+            <!--NOMOR ONLINE-->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,242 +27,363 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:padding="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Nomor Online"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"/>
-                    <View
-                        android:id="@+id/view2"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#999999"
-                        android:layout_marginTop="5dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:layout_marginBottom="5dp"/>
-                    <TextView
-                        android:id="@+id/txt_no_online"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:text="12312"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Jenis Perizinan"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"/>
-                    <View
-                        android:id="@+id/view3"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#999999"
-                        android:layout_marginTop="5dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:layout_marginBottom="5dp"/>
-                    <TextView
-                        android:id="@+id/txt_jenis_izin"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:text="SIUP"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Bentuk Usaha"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"/>
-                    <View
-                        android:id="@+id/view5"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#999999"
-                        android:layout_marginTop="5dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:layout_marginBottom="5dp"/>
-                    <TextView
-                        android:id="@+id/txt_bentuk_usaha"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:text="Perorangan"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Perusahaan"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"/>
-
-                    <View
-                        android:id="@+id/view6"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
-                        android:background="#999999" />
-                    <TextView
-                        android:id="@+id/txt_nama_perusahaan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:text="PT.ABC"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Status Berkas"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"/>
-
-                    <View
-                        android:id="@+id/view7"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:textAlignment="center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
-                        android:background="#999999" />
-                    <TextView
-                        android:id="@+id/txt_posisi_berkas"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:text="KABAG"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Posisi Berkas"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"/>
-
-                    <View
-                        android:id="@+id/view8"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:textAlignment="center"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
-                        android:background="#999999" />
-                    <TextView
-                        android:id="@+id/txt_status_berkas"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:text="PROSES VERIFIKASI"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:id="@+id/txt_header_solusi"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Solusi"
-                        android:textSize="@dimen/text_size_result_activity"
-                        android:textAlignment="center" />
-                    <View
-                        android:id="@+id/view1"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#999999"
-                        android:layout_marginTop="5dp"
-                        android:layout_below="@+id/txt_header_solusi"
-                        android:layout_marginBottom="5dp"/>
-
-                    <TextView
-                        android:id="@+id/txt_solusi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="hsalkfjhskajhsadkfjhsdkfjhskadjfhalskjdhfklsajhdfkjsahdfkajshdfkjashfkjhaskdfjhaksjdfhkasjdhfakjshdfkjashdfkjshdfakjshdflkjahsdfkjashdfkjh"
-                        android:textAlignment="center"
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/idhd"
                         />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nomor Online"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"/>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#999999"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_no_online"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"
+                            android:text="12312"/>
+
+                    </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
+            <!--JENIS PERIZINAN-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/folder"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Perizinan"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"/>
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#999999"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:id="@+id/txt_jenis_izin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:textSize="@dimen/text_size_result_activity"
+                            android:text="SIUP"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--BENTUK USAHA-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/hand"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bentuk Usaha"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"/>
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#999999"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:id="@+id/txt_bentuk_usaha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:textSize="@dimen/text_size_result_activity"
+                            android:text="Perorangan"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--PERUSAHAAN-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/visitor"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Perusahaan"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"/>
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#999999" />
+                        <TextView
+                            android:id="@+id/txt_nama_perusahaan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:textSize="@dimen/text_size_result_activity"
+                            android:gravity="center"
+                            android:text="PT.ABC"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--POSISI-BERKAS-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/desk"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Posisi Berkas"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"/>
+
+                        <View
+                            android:id="@+id/view7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:textAlignment="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#999999" />
+                        <TextView
+                            android:id="@+id/txt_posisi_berkas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"
+                            android:text="KABAG"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--STATUS-BERKAS-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/document"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Status Berkas"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"/>
+
+                        <View
+                            android:id="@+id/view8"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:textAlignment="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#999999" />
+                        <TextView
+                            android:id="@+id/txt_status_berkas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:textSize="@dimen/text_size_result_activity"
+                            android:gravity="center"
+                            android:text="BELUM AMBIL DATA PROSES VERIFIKASI"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--SOLUSI-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/solved"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/txt_header_solusi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Solusi"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_result_activity"
+                             />
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#999999"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/txt_header_solusi"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_solusi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="hsalkfjhskajhsadkfjhsdkfjhskadjfhalskjdhfklsajhdfkjsahdfkajshdfkjashfkjhaskdfjhaksjdfhkasjdhfakjshdfkjashdfkjshdfakjshdflkjahsdfkjashdfkjh"
+                            android:paddingTop="10dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/ripSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/form_space_button">
+
+                <Button
+                    android:id="@+id/buttonSelesai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selesai"
+                    android:textAllCaps="false"
+                    />
+            </com.andexert.library.RippleView>
 
         </LinearLayout>
-
-
-
     </ScrollView>
 
 </LinearLayout>

@@ -5,5 +5,5 @@ package e.twfan.sistempakar.helper;
  */
 
 public class Config {
-    public static  String HOST = "http://192.168.1.9/sistem_pakar/";
+    public static  String HOST = "http://reza-pens.online/";
 }

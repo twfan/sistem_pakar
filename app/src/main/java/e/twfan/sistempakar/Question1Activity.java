@@ -34,7 +34,7 @@ public class Question1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ResultActivity.answer1=false;
-                startActivity(new Intent(Question1Activity.this, Question2Activity.class));
+                startActivity(new Intent(Question1Activity.this, ResultActivity.class));
                 finish();
             }
         });
